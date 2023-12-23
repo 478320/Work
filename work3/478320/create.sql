@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS `tb_order_goods`(
                                                   `id` INT(4) NOT NULL AUTO_INCREMENT COMMENT '交易编号',
                                                   `order_id` INT(4) NOT NULL COMMENT '订单编号',
                                                   `goods_id` INT(4) NOT NULL COMMENT '商品编号',
-                                                  `quantity` int(4) Not null COMMENT '商品数量'
+                                                  `quantity` int(4) Not null COMMENT '商品数量',
+                                                  PRIMARY KEY(`id`)
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
 INSERT INTO `tb_goods`(`NAME`,`price`) VALUES('鼠标','52.99'),('键盘','99.00'),('电脑','5000.99'),('笔','10.32'),('打印机','1469.00'),('摄像头','158.30'),('文件夹','14.00');
