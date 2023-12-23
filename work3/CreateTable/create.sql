@@ -2,7 +2,7 @@ CREATE DATABASE `order_manage` CHARACTER set utf8 COLLATE utf8_general_ci;
 USE order_manage;
 CREATE TABLE IF NOT EXISTS `tb_goods`(
                                          `id` INT(4) NOT NULL AUTO_INCREMENT COMMENT '商品编号',
-                                         `NAME` VARCHAR(30) NOT NULL DEFAULT '无' COMMENT '商品名',
+                                         `name` VARCHAR(30) NOT NULL DEFAULT '无' COMMENT '商品名',
                                          `price` decimal(10,2) Not null COMMENT '商品价格',
                                          PRIMARY KEY(`id`)
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
