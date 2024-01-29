@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8081
+spring:
+  application:
+    name: todolist
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/todolist?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Yusiheng666666
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  jackson:
+    default-property-inclusion: non_null # JSON?????????
+    time-zone: GMT+8
+    date-format: yyyy/M/d H:mm
+  config:
+    activate:
+      on-profile: dev
+logging:
+  level:
+    com.huayu: debug
+
+---
+server:
+  port: 8081
+spring:
+  application:
+    name: todolist
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.113.145.156:3306/todolist?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  jackson:
+    default-property-inclusion: non_null # JSON?????????
+    time-zone: GMT+8
+    date-format: yyyy/M/d H:mm
+  config:
+    activate:
+      on-profile: pro
+logging:
+  level:
+    com.huayu: debug
