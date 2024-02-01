@@ -25,7 +25,11 @@ spring:
 logging:
   level:
     com.huayu: debug
-
+jasypt:
+  encryptor:
+    password: huayu
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
 ---
 server:
   port: 8081
@@ -34,9 +38,9 @@ spring:
     name: todolist
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.113.145.156:3306/todolist?useSSL=false&serverTimezone=UTC
-    username: root
-    password: 123
+    url: ENC(y62r9gC7N02E6WUdK06/4cYDjlRXh6+nPEI2WSDRjmzEHJJMrfC6NyvOzFHgO4UA9NqUWHfnpRufbNxhxmu9i90i0ajBsZruoR2m5TIzzL+13tuycebINw==)
+    username: ENC(mgcFuJ1QOMyJUhbg/e0q6w==)
+    password: ENC(Ksn0YYz74h9Y9PRgKDZHIA==)
     type: com.alibaba.druid.pool.DruidDataSource
 
   jackson:
@@ -49,3 +53,7 @@ spring:
 logging:
   level:
     com.huayu: debug
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
