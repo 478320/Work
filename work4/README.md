@@ -1,4 +1,4 @@
-# WarmUp
+# Cooperate
 
 该项目使用了Springboot技术开发Spring程序，使用了mybatisplus框架，mysql，redis数据库，以及hutool工具类，jastpt加密，阿里云OOS，SpringSecurity安全框架等技术
 
@@ -9,3 +9,7 @@
 对于查询文章等功能的redis缓存暂未添加实现，对于二级以上等多级评论功能尚未了解
 
 通过dockerfile部署项目，部署对应的mysql与redis后可启动
+
+一下是供测试使用的接口文档
+
+https://apifox.com/apidoc/shared-6aa8d7db-1eac-42e4-a040-fd5c6da19b90
